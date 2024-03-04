@@ -1,5 +1,7 @@
 .PHONY: clean test
 
+FLAGS = -std=c89 -Wall
+
 all: main
 
 main: main.o add.o
@@ -11,13 +13,13 @@ test: test.o add.o
 	rm -f test
 
 add.o: add.c
-	$(CC) add.c -c -o add.o
+	$(CC) $(FLAGS) add.c -c -o add.o
 
 test.o: test.c
-	$(CC) test.c -c -o test.o
+	$(CC) $(FLAGS) test.c -c -o test.o
 
 main.o: main.c
-	$(CC) main.c -c -o main.o
+	$(CC) $(FLAGS) main.c -c -o main.o
 
 clean:
 	rm -f *.o main test

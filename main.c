@@ -8,6 +8,6 @@ main(void)
     int answer = add(a, b);
 
     printf("The answer is %d.\n", answer);
-    
+
     return 0;
 }
