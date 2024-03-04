@@ -2,7 +2,7 @@
 #include "add.h"
 
 int
-main()
+main(void)
 {
     int a = 19, b = 23;
     int answer = add(a, b);
