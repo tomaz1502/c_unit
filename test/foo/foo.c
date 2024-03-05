@@ -1,5 +1,5 @@
-#include "../add.h"
-#include "minunit.h"
+#include "../../src/add.h"
+#include "../minunit.h"
 
 MU_TEST
 (test_add)
@@ -27,7 +27,7 @@ MU_TEST
 }
 
 MU_TEST_SUITE
-(test_suite)
+(test_suite_add)
 {
     /* MU_SUITE_CONFIGURE(&test_setup, &test_teardown); */
     MU_RUN_TEST(test_add);
